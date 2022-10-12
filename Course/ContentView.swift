@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView{
+                List{
+                    ItemShape(color: .yellow, name: "SwiftUI app IOS 15 (P2)")
+                    NavigationLink(destination: IOS15P1View()){
+                        ItemShape(color: .green, name: "SwiftUI app IOS 15 (P1)")
+                    }.offset(x:10)
+            }
+                .navigationBarTitle(Text("Courses"))
+                  
         }
-        .padding()
     }
 }
 

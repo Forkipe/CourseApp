@@ -7,18 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C6322AB28F56EF400645600 /* Lesson 3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6322AA28F56EF400645600 /* Lesson 3.swift */; };
+		0C6322AD28F56F3800645600 /* style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6322AC28F56F3800645600 /* style.swift */; };
+		0C6322B028F56F6400645600 /* Lesson 4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6322AF28F56F6400645600 /* Lesson 4.swift */; };
+		0C6322B228F56F9C00645600 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6322B128F56F9C00645600 /* AccountView.swift */; };
+		0C6322B528F56FD900645600 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6322B428F56FD900645600 /* Styles.swift */; };
+		0C6322B828F5A06700645600 /* Lesson5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6322B728F5A06700645600 /* Lesson5.swift */; };
+		0C6322BA28F5A08F00645600 /* AccountView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6322B928F5A08F00645600 /* AccountView1.swift */; };
+		0C6322BC28F5A0C200645600 /* styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6322BB28F5A0C200645600 /* styles.swift */; };
+		0C6322BF28F6B09500645600 /* Lesson 6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6322BE28F6B09500645600 /* Lesson 6.swift */; };
+		0C6322C128F6B0C200645600 /* AccountView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6322C028F6B0C200645600 /* AccountView2.swift */; };
+		0CC1AEB628F551E200B77DE2 /* Lesson1VIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC1AEB528F551E200B77DE2 /* Lesson1VIew.swift */; };
+		0CC1AEB828F5524500B77DE2 /* Lesson2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC1AEB728F5524500B77DE2 /* Lesson2View.swift */; };
 		0CF9ACA128F34AFD00BFEBE3 /* CourseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF9ACA028F34AFD00BFEBE3 /* CourseApp.swift */; };
 		0CF9ACA328F34AFD00BFEBE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF9ACA228F34AFD00BFEBE3 /* ContentView.swift */; };
-		0CF9ACA528F34B0000BFEBE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CF9ACA428F34B0000BFEBE3 /* Assets.xcassets */; };
-		0CF9ACA828F34B0000BFEBE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CF9ACA728F34B0000BFEBE3 /* Preview Assets.xcassets */; };
+		0CF9ACAF28F356BD00BFEBE3 /* IOS15(P1)View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF9ACAE28F356BD00BFEBE3 /* IOS15(P1)View.swift */; };
+		0CF9ACB128F402C700BFEBE3 /* Course Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF9ACB028F402C700BFEBE3 /* Course Item.swift */; };
+		0CF9ACB328F4160000BFEBE3 /* SwiftUIApp(P1)View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF9ACB228F415FF00BFEBE3 /* SwiftUIApp(P1)View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C6322AA28F56EF400645600 /* Lesson 3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson 3.swift"; sourceTree = "<group>"; };
+		0C6322AC28F56F3800645600 /* style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = style.swift; sourceTree = "<group>"; };
+		0C6322AF28F56F6400645600 /* Lesson 4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson 4.swift"; sourceTree = "<group>"; };
+		0C6322B128F56F9C00645600 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		0C6322B428F56FD900645600 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		0C6322B728F5A06700645600 /* Lesson5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson5.swift; sourceTree = "<group>"; };
+		0C6322B928F5A08F00645600 /* AccountView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView1.swift; sourceTree = "<group>"; };
+		0C6322BB28F5A0C200645600 /* styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = styles.swift; sourceTree = "<group>"; };
+		0C6322BE28F6B09500645600 /* Lesson 6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson 6.swift"; sourceTree = "<group>"; };
+		0C6322C028F6B0C200645600 /* AccountView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView2.swift; sourceTree = "<group>"; };
+		0CC1AEB528F551E200B77DE2 /* Lesson1VIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson1VIew.swift; sourceTree = "<group>"; };
+		0CC1AEB728F5524500B77DE2 /* Lesson2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson2View.swift; sourceTree = "<group>"; };
 		0CF9AC9D28F34AFD00BFEBE3 /* Course.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Course.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF9ACA028F34AFD00BFEBE3 /* CourseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseApp.swift; sourceTree = "<group>"; };
 		0CF9ACA228F34AFD00BFEBE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0CF9ACA428F34B0000BFEBE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CF9ACA728F34B0000BFEBE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0CF9ACAE28F356BD00BFEBE3 /* IOS15(P1)View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IOS15(P1)View.swift"; sourceTree = "<group>"; };
+		0CF9ACB028F402C700BFEBE3 /* Course Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Course Item.swift"; sourceTree = "<group>"; };
+		0CF9ACB228F415FF00BFEBE3 /* SwiftUIApp(P1)View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUIApp(P1)View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +60,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C6322A828F56C7600645600 /* Lesson 2 */ = {
+			isa = PBXGroup;
+			children = (
+				0CC1AEB728F5524500B77DE2 /* Lesson2View.swift */,
+			);
+			path = "Lesson 2";
+			sourceTree = "<group>";
+		};
+		0C6322A928F56EE800645600 /* Lesson 3 */ = {
+			isa = PBXGroup;
+			children = (
+				0C6322AA28F56EF400645600 /* Lesson 3.swift */,
+				0C6322AC28F56F3800645600 /* style.swift */,
+			);
+			path = "Lesson 3";
+			sourceTree = "<group>";
+		};
+		0C6322AE28F56F5800645600 /* Lesson 4 */ = {
+			isa = PBXGroup;
+			children = (
+				0C6322AF28F56F6400645600 /* Lesson 4.swift */,
+				0C6322B128F56F9C00645600 /* AccountView.swift */,
+				0C6322B428F56FD900645600 /* Styles.swift */,
+			);
+			path = "Lesson 4";
+			sourceTree = "<group>";
+		};
+		0C6322B628F56FE000645600 /* Lesson 5 */ = {
+			isa = PBXGroup;
+			children = (
+				0C6322B728F5A06700645600 /* Lesson5.swift */,
+				0C6322B928F5A08F00645600 /* AccountView1.swift */,
+				0C6322BB28F5A0C200645600 /* styles.swift */,
+			);
+			path = "Lesson 5";
+			sourceTree = "<group>";
+		};
+		0C6322BD28F6B02300645600 /* Lesson 6 */ = {
+			isa = PBXGroup;
+			children = (
+				0C6322BE28F6B09500645600 /* Lesson 6.swift */,
+				0C6322C028F6B0C200645600 /* AccountView2.swift */,
+			);
+			path = "Lesson 6";
+			sourceTree = "<group>";
+		};
+		0CC1AEB128F550FC00B77DE2 /* IOS15(P1) */ = {
+			isa = PBXGroup;
+			children = (
+				0C6322BD28F6B02300645600 /* Lesson 6 */,
+				0C6322B628F56FE000645600 /* Lesson 5 */,
+				0C6322AE28F56F5800645600 /* Lesson 4 */,
+				0C6322A928F56EE800645600 /* Lesson 3 */,
+				0C6322A828F56C7600645600 /* Lesson 2 */,
+				0CC1AEB428F5517900B77DE2 /* Lesson 1 */,
+			);
+			path = "IOS15(P1)";
+			sourceTree = "<group>";
+		};
+		0CC1AEB428F5517900B77DE2 /* Lesson 1 */ = {
+			isa = PBXGroup;
+			children = (
+				0CC1AEB528F551E200B77DE2 /* Lesson1VIew.swift */,
+			);
+			path = "Lesson 1";
+			sourceTree = "<group>";
+		};
 		0CF9AC9428F34AFD00BFEBE3 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +148,10 @@
 			children = (
 				0CF9ACA028F34AFD00BFEBE3 /* CourseApp.swift */,
 				0CF9ACA228F34AFD00BFEBE3 /* ContentView.swift */,
+				0CF9ACB028F402C700BFEBE3 /* Course Item.swift */,
+				0CF9ACAE28F356BD00BFEBE3 /* IOS15(P1)View.swift */,
+				0CF9ACB228F415FF00BFEBE3 /* SwiftUIApp(P1)View.swift */,
+				0CC1AEB128F550FC00B77DE2 /* IOS15(P1) */,
 				0CF9ACA428F34B0000BFEBE3 /* Assets.xcassets */,
 				0CF9ACA628F34B0000BFEBE3 /* Preview Content */,
 			);
@@ -76,7 +175,6 @@
 			buildPhases = (
 				0CF9AC9928F34AFD00BFEBE3 /* Sources */,
 				0CF9AC9A28F34AFD00BFEBE3 /* Frameworks */,
-				0CF9AC9B28F34AFD00BFEBE3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -120,25 +218,28 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		0CF9AC9B28F34AFD00BFEBE3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0CF9ACA828F34B0000BFEBE3 /* Preview Assets.xcassets in Resources */,
-				0CF9ACA528F34B0000BFEBE3 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		0CF9AC9928F34AFD00BFEBE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C6322AB28F56EF400645600 /* Lesson 3.swift in Sources */,
+				0CF9ACB128F402C700BFEBE3 /* Course Item.swift in Sources */,
+				0C6322B228F56F9C00645600 /* AccountView.swift in Sources */,
+				0C6322C128F6B0C200645600 /* AccountView2.swift in Sources */,
+				0C6322BF28F6B09500645600 /* Lesson 6.swift in Sources */,
+				0C6322BA28F5A08F00645600 /* AccountView1.swift in Sources */,
+				0C6322B528F56FD900645600 /* Styles.swift in Sources */,
+				0CC1AEB828F5524500B77DE2 /* Lesson2View.swift in Sources */,
+				0C6322BC28F5A0C200645600 /* styles.swift in Sources */,
 				0CF9ACA328F34AFD00BFEBE3 /* ContentView.swift in Sources */,
+				0CC1AEB628F551E200B77DE2 /* Lesson1VIew.swift in Sources */,
 				0CF9ACA128F34AFD00BFEBE3 /* CourseApp.swift in Sources */,
+				0CF9ACB328F4160000BFEBE3 /* SwiftUIApp(P1)View.swift in Sources */,
+				0C6322AD28F56F3800645600 /* style.swift in Sources */,
+				0CF9ACAF28F356BD00BFEBE3 /* IOS15(P1)View.swift in Sources */,
+				0C6322B028F56F6400645600 /* Lesson 4.swift in Sources */,
+				0C6322B828F5A06700645600 /* Lesson5.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +371,8 @@
 				DEVELOPMENT_TEAM = KM8G9U2FRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Course App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +402,8 @@
 				DEVELOPMENT_TEAM = KM8G9U2FRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Course App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
