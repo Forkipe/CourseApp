@@ -13,7 +13,7 @@ struct IOS15P1View:View{
         NavigationView{
             VStack{
                 VStack{
-                    ItemShape(color: .green, name: "SwiftUI app IOS 15 (P1)")
+                    ItemShape(image: "checkmark.seal.fill",color: .green, name: "SwiftUI app IOS 15 (P1)")
                         .offset(x:0,y:-170)
                     ZStack{
                         RoundedRectangle(cornerRadius: 20)
