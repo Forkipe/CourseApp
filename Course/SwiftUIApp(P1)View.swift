@@ -14,36 +14,56 @@ struct SwiftUIAppP1:View{
             
                 List{
                     NavigationLink(destination: ContentViewL1().navigationBarBackButtonHidden(true) ){
-                        Text("Lesson 4")
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(lineWidth: 2)
+                            .overlay( Text("Lesson 4")
                             .fontWeight(.heavy)
-                            .font(.subheadline)
+                            .font(.subheadline))
+                            .foregroundColor(.black)
                     }
                     NavigationLink(destination: ContentViewL2().navigationBarBackButtonHidden(true) ){
-                        Text("Lesson 5")
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(lineWidth: 2)
+                            .overlay( Text("Lesson 5")
                             .fontWeight(.heavy)
-                            .font(.subheadline)
+                            .font(.subheadline))
+                            .foregroundColor(.black)
                     }
                     NavigationLink(destination: ContentViewL3().navigationBarBackButtonHidden(true)){
-                        Text("Lesson 6")
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(lineWidth: 2)
+                            .overlay( Text("Lesson 6")
                             .fontWeight(.heavy)
-                            .font(.subheadline)
+                            .font(.subheadline))
+                            .foregroundColor(.black)
+                            
+                       
                     }
                     NavigationLink(destination: AccountView().navigationBarBackButtonHidden(true)){
-                        Text("Lesson 7")
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(lineWidth: 2)
+                            .overlay( Text("Lesson 7")
                             .fontWeight(.heavy)
-                            .font(.subheadline)
+                            .font(.subheadline))
+                            .foregroundColor(.black)
                     }
                     NavigationLink(destination: AccountView1().navigationBarBackButtonHidden(true)){
-                        Text("Lesson 8")
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(lineWidth: 2)
+                            .overlay( Text("Lesson 8")
                             .fontWeight(.heavy)
-                            .font(.subheadline)
+                            .font(.subheadline))
+                            .foregroundColor(.black)
                     }
                     NavigationLink(destination: AccountView2().navigationBarBackButtonHidden(true)){
-                        Text("Lesson 9")
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(lineWidth: 2)
+                            .overlay( Text("Lesson 9")
                             .fontWeight(.heavy)
-                            .font(.subheadline)
+                            .font(.subheadline))
+                            .foregroundColor(.black)
                     }
-                }
+                }.scrollContentBackground(.hidden)
                 .navigationTitle("Lessons")
             }
         }

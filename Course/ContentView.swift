@@ -16,7 +16,7 @@ struct ContentView: View {
                     NavigationLink(destination: IOS15P1View()){
                         ItemShape(image: "checkmark.seal.fill",color: .green, name: "SwiftUI app IOS 15 (P1)")
                     }.offset(x:10)
-            }
+                }.scrollContentBackground(.hidden)
                 .navigationBarTitle(Text("Courses"))
                   
         }
