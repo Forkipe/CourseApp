@@ -1,5 +1,5 @@
 //
-//  Lesson5.swift
+//  Lesson2View.swift
 //  Course
 //
 //  Created by Марк Горкій on 11.10.2022.
@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct ContentViewL5: View {
+struct ContentViewL2: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8.0) {
             Spacer()
@@ -16,14 +16,14 @@ struct ContentViewL5: View {
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 26.0, height: 26.0)
-                .cornerRadius(10)
+                .cornerRadius(20.0)
                 .padding(9)
-                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
-                .strokeStyle(cornerRadius: 16)
+                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
             Text("SwiftUI for iOS 15")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .foregroundStyle(.linearGradient(colors: [.primary, .primary.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomTrailing))
+                .foregroundStyle(.linearGradient(colors:
+                                                    [.primary, .primary.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomTrailing))
                 .lineLimit(1)
             Text("20 sections - 3 hours".uppercased())
                 .font(.footnote)
@@ -40,10 +40,13 @@ struct ContentViewL5: View {
         .padding(.vertical, 20)
         .frame(height: 350.0)
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
-//        .cornerRadius(30.0)
-//        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
         .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 0, y: 10)
-        .strokeStyle()
+        .overlay(
+            RoundedRectangle(cornerRadius: 30, style: .continuous)
+                .stroke(.linearGradient(colors:
+                                            [.white.opacity(0.3), .black.opacity(0.1)], startPoint: .top, endPoint: .bottom))
+                .blendMode(.overlay)
+        )
         .padding(.horizontal, 20)
         .background(
             Image("Blob 1")
@@ -59,10 +62,10 @@ struct ContentViewL5: View {
     }
 }
 
-struct ContentViewL5_Previews: PreviewProvider {
+struct ContentViewL2_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentViewL5()
+            ContentViewL2()
         }
     }
 }

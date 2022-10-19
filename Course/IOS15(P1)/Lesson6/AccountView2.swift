@@ -7,8 +7,7 @@
 import SwiftUI
 import Foundation
 struct AccountView2: View {
-    @State var isDeleted = false
-    
+    @State var isDeleted = false    
     var body: some View {
         NavigationView {
             List {
@@ -26,7 +25,7 @@ struct AccountView2: View {
                                 .foregroundColor(.blue)
                                 .font(.system(size: 200))
                                 .offset(x: -50, y: -100)
-                    )
+                        )
                     Text("Meng To")
                         .font(.title.weight(.semibold))
                     HStack {
@@ -38,7 +37,6 @@ struct AccountView2: View {
                 }
                 .frame(maxWidth: .infinity)
                 .padding()
-                
                 Section {
                     NavigationLink(destination: ContentView()) {
                         Label("Settings", systemImage: "gear")
@@ -53,7 +51,6 @@ struct AccountView2: View {
                 .accentColor(.primary)
                 .listRowSeparatorTint(.blue)
                 .listRowSeparator(.hidden)
-                
                 Section {
                     if !isDeleted {
                         Link(destination: URL(string: "https://apple.com")!) {
