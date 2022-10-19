@@ -26,7 +26,7 @@ struct AccountView1: View {
                                 .foregroundColor(.blue)
                                 .font(.system(size: 200))
                                 .offset(x: -50, y: -100)
-                    )
+                        )
                     Text("Meng To")
                         .font(.title.weight(.semibold))
                     HStack {
@@ -37,8 +37,7 @@ struct AccountView1: View {
                     }
                 }
                 .frame(maxWidth: .infinity)
-                .padding()
-                
+                .padding()                
                 Section {
                     Label("Settings", systemImage: "gear")
                     Label("Billing", systemImage: "creditcard")

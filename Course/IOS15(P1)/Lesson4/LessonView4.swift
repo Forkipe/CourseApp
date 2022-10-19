@@ -23,7 +23,8 @@ struct ContentViewL4: View {
             Text("SwiftUI for iOS 15")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .foregroundStyle(.linearGradient(colors: [.primary, .primary.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomTrailing))
+                .foregroundStyle(.linearGradient(colors:
+                                                    [.primary, .primary.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomTrailing))
                 .lineLimit(1)
             Text("20 sections - 3 hours".uppercased())
                 .font(.footnote)
@@ -40,8 +41,6 @@ struct ContentViewL4: View {
         .padding(.vertical, 20)
         .frame(height: 350.0)
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
-//        .cornerRadius(30.0)
-//        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
         .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 0, y: 10)
         .strokeStyle()
         .padding(.horizontal, 20)
@@ -59,11 +58,10 @@ struct ContentViewL4: View {
     }
 }
 
-struct ContentView_PreviewsL4: PreviewProvider {
+struct ContentViewL4_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentViewL4()
-          
         }
     }
 }
