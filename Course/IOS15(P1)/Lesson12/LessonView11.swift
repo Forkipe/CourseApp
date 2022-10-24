@@ -18,11 +18,11 @@ struct ContentViewL11: View {
             case .home:
                 HomeView()
             case .explore:
-                AccountView()
+                AccountViewL4()
             case .notifications:
-                AccountView()
+                AccountViewL4()
             case .library:
-                AccountView()
+                AccountViewL4()
             }
             
             TabBar()

@@ -11,14 +11,16 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ItemShape(image: "xmark.seal.fill", color: .red, name: "SwiftUI app IOS 15 (P3)")
+                ItemShape(image: "gearshape.2", color: .yellow, name: "SwiftUI app IOS 15 (P3)")
+                
                 ItemShape(image: "gearshape.2", color: .yellow, name: "SwiftUI app IOS 15 (P2)")
+                
                 NavigationLink(destination: IOS15P1View()) {
-                    ItemShape(image: "checkmark.seal.fill", color: .green, name: "SwiftUI app IOS 15 (P1)")
-                }.offset(x: 10)
-            }.scrollContentBackground(.hidden)
-                .navigationBarTitle(Text("Courses"))
+                    ItemShape(image: "checkmark", color: .green, name: "SwiftUI app IOS 15 (P1)")
+                }.navigationBarTitle(Text("Courses").font(.system(size: 20)))
+            }.offset(x: 10)
         }
+        .scrollContentBackground(.hidden)
     }
 }
 

@@ -60,8 +60,46 @@ struct SwiftUIAppP1: View {
                             .font(.subheadline))
                         .foregroundColor(.black)
                 }
+                NavigationLink(destination: AccountView3().navigationBarBackButtonHidden(true)) {
+                    RoundedRectangle(cornerRadius: 20)
+                        .stroke(lineWidth: 2)
+                        .overlay( Text("Lesson 10")
+                            .fontWeight(.heavy)
+                            .font(.subheadline))
+                        .foregroundColor(.black)
+                }
+                NavigationLink(destination: HexagonView().navigationBarBackButtonHidden(true)) {
+                    RoundedRectangle(cornerRadius: 20)
+                        .stroke(lineWidth: 2)
+                        .overlay( Text("Lesson 11")
+                            .fontWeight(.heavy)
+                            .font(.subheadline))
+                        .foregroundColor(.black)
+                }
+                NavigationLink(destination: BlobView1().navigationBarBackButtonHidden(true)) {
+                    RoundedRectangle(cornerRadius: 20)
+                        .stroke(lineWidth: 2)
+                        .overlay( Text("Lesson 12")
+                            .fontWeight(.heavy)
+                            .font(.subheadline))
+                        .foregroundColor(.black)
+                }
+                NavigationLink(destination: ContentViewL11().navigationBarBackButtonHidden(true)) {
+                    RoundedRectangle(cornerRadius: 20)
+                        .stroke(lineWidth: 2)
+                        .overlay( Text("Lesson 13")
+                            .fontWeight(.heavy)
+                            .font(.subheadline))
+                        .foregroundColor(.black)
+                }
             }.scrollContentBackground(.hidden)
                 .navigationTitle("Lessons")
         }
+    }
+}
+
+struct SwiftUIAppP1_Previews: PreviewProvider {
+    static var previews: some View {
+        SwiftUIAppP1()
     }
 }

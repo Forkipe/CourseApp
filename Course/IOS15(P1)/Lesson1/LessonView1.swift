@@ -41,10 +41,7 @@ struct ContentViewL1: View {
         .cornerRadius(30.0)
         .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 0, y: 10)
         .padding(.horizontal, 20)
-        .background(
-            Image("Blob 1")
-                .offset(x: 250, y: -100)
-        )
+        .background()
         .overlay(
             Image("Illustration 5")
                 .resizable()

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct AccountViewL7: View {
+struct AccountView3: View {
     @State var isDeleted = false
     @State var isPinned = false
     var body: some View {
@@ -78,7 +78,7 @@ struct AccountViewL7: View {
                     }
                 }
                 .swipeActions(edge: .leading, allowsFullSwipe: true) {
-                    Button(action: { isDeleted = true }){
+                    Button(action: { isDeleted = true }) {
                         Label("Delete", systemImage: "trash")
                     }
                     .tint(.red)
@@ -99,8 +99,7 @@ struct AccountViewL7: View {
         }
         .accentColor(.primary)
         .listRowSeparator(.hidden)
-    }
-    
+    }    
     var pinButton: some View {
         Button { isPinned.toggle() } label: {
             if isPinned {
@@ -113,8 +112,8 @@ struct AccountViewL7: View {
     }
 }
 
-struct AccountViewL7_Previews: PreviewProvider {
+struct AccountView3_Previews: PreviewProvider {
     static var previews: some View {
-        AccountViewL7()
+        AccountView3()
     }
 }
