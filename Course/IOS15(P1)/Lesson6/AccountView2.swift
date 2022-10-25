@@ -7,7 +7,7 @@
 import SwiftUI
 import Foundation
 struct AccountView2: View {
-    @State var isDeleted = false    
+    @State var isDeleted=false    
     var body: some View {
         NavigationView {
             List {
@@ -26,12 +26,12 @@ struct AccountView2: View {
                                 .font(.system(size: 200))
                                 .offset(x: -50, y: -100)
                         )
-                    Text("Meng To")
+                    Text("Mark Horkiy")
                         .font(.title.weight(.semibold))
                     HStack {
                         Image(systemName: "location")
                             .imageScale(.large)
-                        Text("Canada")
+                        Text("Ukraine")
                             .foregroundColor(.secondary)
                     }
                 }
@@ -62,7 +62,7 @@ struct AccountView2: View {
                             }
                         }
                         .swipeActions(edge: .leading, allowsFullSwipe: true) {
-                            Button(action: { isDeleted = true }) {
+                            Button(action: { isDeleted = true}) {
                                 Label("Delete", systemImage: "trash")
                             }
                             .tint(.red)

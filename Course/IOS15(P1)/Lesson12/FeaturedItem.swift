@@ -1,14 +1,14 @@
 //
-//  Lesson 6.swift
+//  FeaturedItem.swift
 //  Course
 //
-//  Created by Марк Горкій on 12.10.2022.
+//  Created by Марк Горкій on 23.10.2022.
 //
 
 import Foundation
 import SwiftUI
 
-struct ContentViewL6: View {
+struct FeaturedItem: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8.0) {
             Spacer()
@@ -23,8 +23,7 @@ struct ContentViewL6: View {
             Text("SwiftUI for iOS 15")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .foregroundStyle(.linearGradient(colors:
-                                                    [.primary, .primary.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomTrailing))
+                .foregroundStyle(.linearGradient(colors: [.primary, .primary.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomTrailing))
                 .lineLimit(1)
             Text("20 sections - 3 hours".uppercased())
                 .font(.footnote)
@@ -58,10 +57,8 @@ struct ContentViewL6: View {
     }
 }
 
-struct ContentViewL6_Previews: PreviewProvider {
+struct FeaturedItem_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ContentViewL6()
-        }
+        FeaturedItem()
     }
 }
