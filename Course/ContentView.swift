@@ -6,26 +6,50 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
+    @EnvironmentObject var model: Model
+    @AppStorage("selectedTab") var selectedTab: Tab = .home
+    @AppStorage("showAccount") var showAccount = false
+    
+    init() {
+        showAccount = false
+    }
+    
     var body: some View {
-        NavigationView {
-            List {
-                ItemShape(image: "gearshape.2", color: .yellow, name: "SwiftUI app IOS 15 (P3)")
-                
-                ItemShape(image: "gearshape.2", color: .yellow, name: "SwiftUI app IOS 15 (P2)")
-                
-                NavigationLink(destination: IOS15P1View()) {
-                    ItemShape(image: "checkmark", color: .green, name: "SwiftUI app IOS 15 (P1)")
-                }.navigationBarTitle(Text("Courses").font(.system(size: 20)))
-            }.offset(x: 10)
+        ZStack {
+            Group {
+                switch selectedTab {
+                case .home:
+                    HomeView()
+                case .explore:
+                    ExploreView()
+                case .notifications:
+                    NotificationsView()
+                case .library:
+                    LibraryView()
+                }
+            }
+            .safeAreaInset(edge: .bottom) {
+                VStack {}.frame(height: 50)
+            }
+            
+            TabBar()
+            
+            if model.showModal {
+                ModalView()
+                    .accessibilityIdentifier("Identifier")
+            }
         }
-        .scrollContentBackground(.hidden)
+        .dynamicTypeSize(.large ... .xxLarge)
+        .sheet(isPresented: $showAccount) {
+            AccountView()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(Model())
     }
 }
