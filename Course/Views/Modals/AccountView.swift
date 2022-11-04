@@ -62,14 +62,7 @@ struct AccountView: View {
             }
             .listStyle(.insetGrouped)
             .navigationTitle("Account")
-            .task {
-                await fetchAddress()
-                await updates.fetchUpdates()
-            }
-            .refreshable {
-                await fetchAddress()
-                await updates.fetchUpdates()
-            }
+            
         }
     }
     

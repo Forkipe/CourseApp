@@ -1,14 +1,13 @@
 //
-//  CourseView.swift
+//  DetailedCourseItem.swift
 //  Course
 //
-//  Created by Марк Горкій on 25.10.2022.
+//  Created by Марк Горкій on 30.10.2022.
 //
-
 import Foundation
 import SwiftUI
 
-struct CourseView: View {
+struct CourseViewDetailed: View {
     var namespace: Namespace.ID
     @Binding var course: Course
     var isAnimated = true
@@ -225,11 +224,11 @@ struct CourseView: View {
     }
 }
 
-struct CourseView_Previews: PreviewProvider {
+struct CourseViewDetailed_Previews: PreviewProvider {
     @Namespace static var namespace
     
     static var previews: some View {
-        CourseView(namespace: namespace, course: .constant(courses[0]))
+        CourseViewDetailed(namespace: namespace, course: .constant(courses[0]))
             .environmentObject(Model())
     }
 }

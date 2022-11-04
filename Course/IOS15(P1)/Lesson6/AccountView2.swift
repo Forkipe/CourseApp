@@ -62,7 +62,7 @@ struct AccountView2: View {
                             }
                         }
                         .swipeActions(edge: .leading, allowsFullSwipe: true) {
-                            Button(action: { isDeleted = true}) {
+                            Button(action: { isDeleted = true }) {
                                 Label("Delete", systemImage: "trash")
                             }
                             .tint(.red)

@@ -44,10 +44,10 @@ struct HomeView: View {
                 
                 if model.showDetail {
                     LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(courses) { сourse in
+                        ForEach(courses) { _ in
                             Rectangle()
                                 .fill(.white)
-                                .frame(height: 300)
+                                .frame(height: 500)
                                 .cornerRadius(30)
                                 .shadow(color: Color("Shadow").opacity(0.2), radius: 20, x: 0, y: 10)
                                 .opacity(0.3)
@@ -65,7 +65,7 @@ struct HomeView: View {
             }
             .coordinateSpace(name: "scroll")
         }
-        .onChange(of: model.showDetail) { value in
+        .onChange(of: model.showDetail) { _ in
             withAnimation {
                 model.showTab.toggle()
                 model.showNav.toggle()

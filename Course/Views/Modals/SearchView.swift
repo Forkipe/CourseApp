@@ -40,7 +40,7 @@ struct SearchView: View {
                 Button {
                     showCourse = true
                     selectedCourse = course
-                } label:  {
+                } label: {
                     ListRow(title: course.title, icon: "magnifyingglass")
                 }
                 .buttonStyle(.plain)
@@ -102,7 +102,7 @@ struct Suggestion: Identifiable {
 
 var suggestionsData = [
     Suggestion(text: "SwiftUI"),
-    Suggestion(text: "Flutter"),
-    Suggestion(text: "Design"),
-    Suggestion(text: "React")
+    Suggestion(text: "Data"),
+    Suggestion(text: "IOS 15"),
+    Suggestion(text: "Animations")
 ]
