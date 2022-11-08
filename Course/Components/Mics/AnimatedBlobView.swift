@@ -13,7 +13,7 @@ struct AnimatedBlobView: View {
     
     var body: some View {
         TimelineView(.animation) { timeline in
-            Canvas { context, size in
+            Canvas { context, _ in
                 let now = timeline.date.timeIntervalSinceReferenceDate
                 let angle1 = cos(Angle.degrees(now.remainder(dividingBy: 3) * 60).radians)
                 let angle2 = cos(Angle.degrees(now.remainder(dividingBy: 6) * 10).radians)
