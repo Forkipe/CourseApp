@@ -43,6 +43,8 @@ struct NavigationBar: View {
                     Image(systemName: "magnifyingglass")
                         .font(.system(size: 17, weight: .bold))
                         .frame(width: 36, height: 36)
+                        .overlay(RoundedRectangle(cornerRadius: 16) .stroke(lineWidth: 1)
+                            .foregroundStyle(LinearGradient(colors: [ .pink, .blue], startPoint: .top, endPoint: .bottom)))
                         .foregroundColor(.secondary)
                         .background(.ultraThinMaterial)
                         .backgroundStyle(cornerRadius: 14, opacity: 0.4)
@@ -60,7 +62,13 @@ struct NavigationBar: View {
                         }
                     }
                 } label: {
-                    avatar
+                    Image("Avatar 1")
+                        .frame(width: 36, height: 36)
+                        .mask(Circle())
+                        .overlay(RoundedRectangle(cornerRadius: 16) .stroke(lineWidth: 1)
+                            .foregroundStyle(LinearGradient(colors: [ .pink, .blue], startPoint: .top, endPoint: .bottom))
+                            )
+                            
                 }
                 .accessibilityElement()
                 .accessibilityLabel("Account")

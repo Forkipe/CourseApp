@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "Avatar 1.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "iPad_76@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

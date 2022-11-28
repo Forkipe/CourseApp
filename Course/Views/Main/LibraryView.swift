@@ -5,108 +5,95 @@
 //  Created by Марк Горкій on 25.10.2022.
 //
 
-import Foundation
 import SwiftUI
 
 struct LibraryView: View {
-    @State var contentHasScrolled = false
-    @EnvironmentObject var model: Model
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
+    @AppStorage("isLiteMode") var isLiteMode: Bool = false
+    
+    @State private var showCertificates: Bool = false
+    @State private var contentOffset = CGFloat(0)
     
     var body: some View {
-        ZStack {
-            Color("Background").ignoresSafeArea()
-            
-            content
-                .background(Image("Blob 1").offset(x: 100, y: -60))
+        NavigationView {
+            ZStack(alignment: .top) {
+                TrackableScrollView(offsetChanged: { offsetPoint in
+                    contentOffset = offsetPoint.y
+                }){
+                    content
+                }
+                
+                VisualEffectBlur(blurStyle: .systemMaterial)
+                    .opacity(contentOffset < -16 ? 1 : 0)
+                    .animation(.easeIn)
+                    .ignoresSafeArea()
+                    .frame(height: 0)
+            }
+            .frame(maxHeight: .infinity, alignment: .top)
+            .background(AccountBackground())
+            .navigationBarHidden(true)
+            .sheet(isPresented: $showCertificates, content: {
+                CertificatesView()
+            })
         }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .accentColor(colorScheme == .dark ? .white : Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
     }
     
     var content: some View {
-        ScrollView {
-            scrollDetection
-            
-            certificatesSection
-                .padding(.top, 100)
-            
-            Text("History".uppercased())
-                .sectionTitleModifier()
-            
-            Group {
-                cardsSection
-                
-                menuSection
-                    .padding(.bottom, 50)
-            }
-            .offset(y: -30)
-        }
-        .coordinateSpace(name: "scroll")
-        .overlay(NavigationBar(title: "Library", contentHasScrolled: $contentHasScrolled))
-    }
-    
-    var cardsSection: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 16) {
-                ForEach(courses) { item in
-                    SmallCourseItem(course: item)
-                }
-            }
-            .padding(20)
-            .padding(.bottom, 40)
-        }
-    }
-    
-    var menuSection: some View {
         VStack {
-            ListRow(title: "History", icon: "clock.fill")
-            Divider()
-            ListRow(title: "Favorites", icon: "star.fill")
-            Divider()
-            ListRow(title: "Downloads", icon: "square.and.arrow.down.fill")
-        }
-        .padding(20)
-        .background(.ultraThinMaterial)
-        .backgroundStyle(cornerRadius: 30)
-        .padding(.horizontal, 20)
-    }
-    
-    var certificatesSection: some View {
-        CertificateView()
-            .frame(height: 220)
-            .background(
-                RoundedRectangle(cornerRadius: 30)
-                    .fill(.linearGradient(colors: [.purple, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
-                    .padding(.horizontal, 20)
-                    .offset(y: -20)
-            )
-            .background(
-                RoundedRectangle(cornerRadius: 30)
-                    .fill(.linearGradient(colors: [.teal, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
-                    .padding(.horizontal, 40)
-                    .offset(y: -40)
-            )
-            .padding(20)
-    }
-    
-    var scrollDetection: some View {
-        GeometryReader { proxy in
-            let offset = proxy.frame(in: .named("scroll")).minY
-            Color.clear.preference(key: ScrollPreferenceKey.self, value: offset)
-        }
-        .onPreferenceChange(ScrollPreferenceKey.self) { offset in
-            withAnimation(.easeInOut) {
-                if offset < 0 {
-                    contentHasScrolled = true
-                } else {
-                    contentHasScrolled = false
+            ProfileRow()
+                .onTapGesture {
+                    showCertificates.toggle()
                 }
+            
+            VStack {
+                divider
+                LiteModeRow()
             }
+            .blurBackground()
+            .padding(.top, 20)
+            
+            VStack {
+                NavigationLink(destination: FAQView()) {
+                    MenuRow()
+                }
+                
+                divider
+                
+                NavigationLink(destination: PackagesView()) {
+                    MenuRow(title: "SwiftUI Packages", leftIcon: "square.stack.3d.up.fill")
+                }
+                
+                divider
+                
+                Link(destination: URL(string: "https://www.youtube.com/channel/UCTIhfOopxukTIRkbXJ3kN-g")!, label: {
+                    MenuRow(title: "YouTube Channel", leftIcon: "play.rectangle.fill", rightIcon: "link")
+                })
+            }
+            .blurBackground()
+            .padding(.top, 20)
+            
+            Text("Version 1.00")
+                .foregroundColor(Color.white.opacity(0.7))
+                .padding(.top, 20)
+                .padding(.horizontal, 20)
+                .padding(.bottom, 10)
+                .font(.footnote)
         }
+        .foregroundColor(Color.white)
+        .padding(.top, 20)
+        .padding(.horizontal, 20)
+        .padding(.bottom, 10)
+    }
+    
+    var divider: some View {
+        Divider().background(Color.white).blendMode(.overlay)
     }
 }
 
 struct LibraryView_Previews: PreviewProvider {
     static var previews: some View {
         LibraryView()
-            .environmentObject(Model())
     }
 }
