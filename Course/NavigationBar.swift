@@ -43,8 +43,6 @@ struct NavigationBar: View {
                     Image(systemName: "magnifyingglass")
                         .font(.system(size: 17, weight: .bold))
                         .frame(width: 36, height: 36)
-                        .overlay(RoundedRectangle(cornerRadius: 16) .stroke(lineWidth: 1)
-                            .foregroundStyle(LinearGradient(colors: [ .pink, .blue], startPoint: .top, endPoint: .bottom)))
                         .foregroundColor(.secondary)
                         .background(.ultraThinMaterial)
                         .backgroundStyle(cornerRadius: 14, opacity: 0.4)
@@ -62,12 +60,9 @@ struct NavigationBar: View {
                         }
                     }
                 } label: {
-                    Image("Avatar 1")
+                    Image("Avatar Default")
                         .frame(width: 36, height: 36)
                         .mask(Circle())
-                        .overlay(RoundedRectangle(cornerRadius: 16) .stroke(lineWidth: 1)
-                            .foregroundStyle(LinearGradient(colors: [ .pink, .blue], startPoint: .top, endPoint: .bottom))
-                            )
                             
                 }
                 .accessibilityElement()
@@ -103,14 +98,14 @@ struct NavigationBar: View {
             .backgroundStyle(cornerRadius: 18, opacity: 0.4)
             .transition(.scale.combined(with: .slide))
         } else {
-            LogoView(image: "Avatar Default")
+            LogoView(image: "Avatar 4")
         }
     }
 }
 
 struct NavigationBar_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationBar(contentHasScrolled: .constant(false))
-            .environmentObject(Model())
+        NavigationBar(contentHasScrolled: .constant(false)).environmentObject(Model())
+            
     }
 }

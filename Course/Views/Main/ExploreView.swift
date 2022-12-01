@@ -101,7 +101,7 @@ struct ExploreView: View {
 
 struct ExploreView_Previews: PreviewProvider {
     static var previews: some View {
-        ExploreView()
-            .environmentObject(Model())
+        ExploreView().environmentObject(Model())
+            
     }
 }

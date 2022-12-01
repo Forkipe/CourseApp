@@ -12,5 +12,5 @@ struct Certificate: Identifiable, Decodable {
     var course: String
     var date: String
     var logo: String
-    var instructor: String
+    var tutor: String
 }

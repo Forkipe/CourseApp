@@ -126,7 +126,7 @@ struct SigninView: View {
 
 struct SigninView_Previews: PreviewProvider {
     static var previews: some View {
-        SigninView()
-            .environmentObject(Model())
+        SigninView().environmentObject(Model())
+            
     }
 }

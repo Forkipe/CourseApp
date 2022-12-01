@@ -16,7 +16,7 @@ struct ProfileRow: View {
             profilePicture
             
             VStack(alignment: .leading, spacing: 2) {
-                Text("Stephanie Diep")
+                Text("Mark Horkiy")
                     .font(.title2)
                     .fontWeight(.bold)
                     .lineLimit(1)
@@ -47,7 +47,7 @@ struct ProfileRow: View {
                 })
                 
             VStack {
-                Image("Profile")
+                Image("Avatar Default")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 66, height: 66, alignment: .center)

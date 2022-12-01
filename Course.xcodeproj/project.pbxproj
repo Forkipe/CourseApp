@@ -31,6 +31,7 @@
 		0C5BF7152930F1AD002BC1AD /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BF7142930F1AD002BC1AD /* TrackableScrollView.swift */; };
 		0C5BF7172930F1DE002BC1AD /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BF7162930F1DE002BC1AD /* NetworkReachability.swift */; };
 		0C5BF71B29324A39002BC1AD /* GoogleService-Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BF7192932467D002BC1AD /* GoogleService-Info.plist */; };
+		0C5ECF342938D7A200BE5287 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 0CF9ACA428F34B0000BFEBE3 /* Assets.xcassets */; };
 		0C6322FF29084A6000645600 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6322FE29084A6000645600 /* NavigationBar.swift */; };
 		0C63230129084AE600645600 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C63230029084AE600645600 /* TabBar.swift */; };
 		0C63230429084B0D00645600 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C63230329084B0D00645600 /* HomeView.swift */; };
@@ -506,6 +507,7 @@
 				0C63231329084BC200645600 /* ModalView.swift in Sources */,
 				0C63239829167CB100645600 /* StrokeStyle.swift in Sources */,
 				0C5BF6F72930EF52002BC1AD /* GradientIcon.swift in Sources */,
+				0C5ECF342938D7A200BE5287 /* Assets.xcassets in Sources */,
 				0C63234A29084E5B00645600 /* Update.swift in Sources */,
 				0C63230629084B2500645600 /* ExploreView.swift in Sources */,
 				0C63232529084CBB00645600 /* ListRow.swift in Sources */,

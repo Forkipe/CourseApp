@@ -96,7 +96,7 @@ struct CertificateCard: View {
     var instructorRow: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text("Design+Code Instructor:")
-            Text(certificateVM.certificates[selection].instructor)
+            Text(certificateVM.certificates[selection].tutor)
         }
     }
     

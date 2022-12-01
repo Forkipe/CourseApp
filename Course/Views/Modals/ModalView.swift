@@ -101,8 +101,8 @@ struct ModalView: View {
 
 struct ModalView_Previews: PreviewProvider {
     static var previews: some View {
-        ModalView()
-            .environmentObject(Model())
+        ModalView().environmentObject(Model())
+            
     }
 }
 

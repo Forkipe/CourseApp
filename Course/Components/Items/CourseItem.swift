@@ -93,7 +93,7 @@ struct CardItem_Previews: PreviewProvider {
     @Namespace static var namespace
     
     static var previews: some View {
-        CourseItem(namespace: namespace, course: courses[0])
-            .environmentObject(Model())
+        CourseItem(namespace: namespace, course: courses[0]).environmentObject(Model())
+           
     }
 }

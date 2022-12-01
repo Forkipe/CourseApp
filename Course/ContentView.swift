@@ -34,9 +34,8 @@ struct ContentView: View {
             }
             
             TabBar()
-            
             if model.showModal {
-                ModalView()
+                ModalView().environmentObject(self.model)
                     .accessibilityIdentifier("Identifier")
             }
         }
@@ -49,7 +48,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .environmentObject(Model())
+        ContentView().environmentObject(Model())
     }
 }

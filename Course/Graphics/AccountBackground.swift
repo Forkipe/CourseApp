@@ -81,11 +81,11 @@ struct AccountBackground: View {
                             startPoint: UnitPoint(x: 0.6932847601384242, y: 0.4025124793110466),
                             endPoint: UnitPoint(x: 0.07165459090335063, y: 0.9445058872153842))).opacity(0.7)
                     .frame(width: 1589.17, height: 1048.92)
-                    .offset(x: -390, y:240)
+                    .offset(x: -390, y: 240)
                     .blur(radius: 50))
                 .mask(Bubble01().frame(width: 2133.35, height: 1227.95))
                 .frame(width: 2133.35, height: 1227.95)
-                .offset(x: 680, y:-280)
+                .offset(x: 680, y: -280)
             
             Circle()
                 .fill(LinearGradient(
