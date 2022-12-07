@@ -18,7 +18,7 @@ struct CertificatesView: View {
             if networkReachability.reachable {
                 if certificateVM.certificates.isEmpty {
                     TabView(selection: $selection) {
-                        ForEach(certificateVM.certificates.indices, id: \.self) { index in
+                        ForEach(certificateVM.certificates.indices, id: \.self) { _ in
                             CertificateCard(selection: $selection)
                                 .padding(.horizontal, 8)
                                 .environmentObject(certificateVM)

@@ -47,7 +47,7 @@ struct ProfileRow: View {
                 })
                 
             VStack {
-                Image("Avatar Default")
+                Image("Avatar 1")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 66, height: 66, alignment: .center)
@@ -82,6 +82,6 @@ struct ProfileRow: View {
 
 struct ProfileRow_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileRow()
+      ProfileRow()
     }
 }

@@ -32,6 +32,7 @@
 		0C5BF7172930F1DE002BC1AD /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BF7162930F1DE002BC1AD /* NetworkReachability.swift */; };
 		0C5BF71B29324A39002BC1AD /* GoogleService-Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BF7192932467D002BC1AD /* GoogleService-Info.plist */; };
 		0C5ECF342938D7A200BE5287 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 0CF9ACA428F34B0000BFEBE3 /* Assets.xcassets */; };
+		0C5ECF36293A6E2A00BE5287 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5ECF35293A6E2A00BE5287 /* ChartsView.swift */; };
 		0C6322FF29084A6000645600 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6322FE29084A6000645600 /* NavigationBar.swift */; };
 		0C63230129084AE600645600 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C63230029084AE600645600 /* TabBar.swift */; };
 		0C63230429084B0D00645600 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C63230329084B0D00645600 /* HomeView.swift */; };
@@ -106,6 +107,7 @@
 		0C5BF7142930F1AD002BC1AD /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
 		0C5BF7162930F1DE002BC1AD /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 		0C5BF7192932467D002BC1AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0C5ECF35293A6E2A00BE5287 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 		0C6322FE29084A6000645600 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		0C63230029084AE600645600 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		0C63230329084B0D00645600 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				0C63230729084B4000645600 /* NotificationsView.swift */,
+				0C5ECF35293A6E2A00BE5287 /* ChartsView.swift */,
 				0C78E5652922B25D0051CA9C /* LearnedLessonsView.swift */,
 				0C63230529084B2500645600 /* ExploreView.swift */,
 				0C63230329084B0D00645600 /* HomeView.swift */,
@@ -513,6 +516,7 @@
 				0C63232529084CBB00645600 /* ListRow.swift in Sources */,
 				0C63233E29084E0200645600 /* CourseSection.swift in Sources */,
 				0C63233C29084DF000645600 /* Course.swift in Sources */,
+				0C5ECF36293A6E2A00BE5287 /* ChartsView.swift in Sources */,
 				0C5BF7172930F1DE002BC1AD /* NetworkReachability.swift in Sources */,
 				0C63230129084AE600645600 /* TabBar.swift in Sources */,
 				0C63230829084B4000645600 /* NotificationsView.swift in Sources */,
