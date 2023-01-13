@@ -33,6 +33,7 @@
 		0C5BF71B29324A39002BC1AD /* GoogleService-Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BF7192932467D002BC1AD /* GoogleService-Info.plist */; };
 		0C5ECF342938D7A200BE5287 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 0CF9ACA428F34B0000BFEBE3 /* Assets.xcassets */; };
 		0C5ECF36293A6E2A00BE5287 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5ECF35293A6E2A00BE5287 /* ChartsView.swift */; };
+		0C6022A029547E4200F12F7B /* CourseViewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C60229F29547E4200F12F7B /* CourseViewsView.swift */; };
 		0C6322FF29084A6000645600 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6322FE29084A6000645600 /* NavigationBar.swift */; };
 		0C63230129084AE600645600 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C63230029084AE600645600 /* TabBar.swift */; };
 		0C63230429084B0D00645600 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C63230329084B0D00645600 /* HomeView.swift */; };
@@ -75,9 +76,7 @@
 		0C63235729084EF800645600 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C63235629084EF800645600 /* ColorExtension.swift */; };
 		0C6323592908508D00645600 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6323582908508D00645600 /* SignUpView.swift */; };
 		0C63235B2908509400645600 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C63235A2908509400645600 /* SignInView.swift */; };
-		0C63239829167CB100645600 /* StrokeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C63239729167CB100645600 /* StrokeStyle.swift */; };
 		0C78E5642922B16C0051CA9C /* LearnedLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C78E5632922B16C0051CA9C /* LearnedLesson.swift */; };
-		0C78E5662922B25D0051CA9C /* LearnedLessonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C78E5652922B25D0051CA9C /* LearnedLessonsView.swift */; };
 		0CF9ACA128F34AFD00BFEBE3 /* CourseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF9ACA028F34AFD00BFEBE3 /* CourseApp.swift */; };
 		0CF9ACA328F34AFD00BFEBE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF9ACA228F34AFD00BFEBE3 /* ContentView.swift */; };
 /* End PBXBuildFile section */
@@ -108,6 +107,7 @@
 		0C5BF7162930F1DE002BC1AD /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 		0C5BF7192932467D002BC1AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0C5ECF35293A6E2A00BE5287 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
+		0C60229F29547E4200F12F7B /* CourseViewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewsView.swift; sourceTree = "<group>"; };
 		0C6322FE29084A6000645600 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		0C63230029084AE600645600 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		0C63230329084B0D00645600 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -150,9 +150,7 @@
 		0C63235629084EF800645600 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		0C6323582908508D00645600 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		0C63235A2908509400645600 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
-		0C63239729167CB100645600 /* StrokeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeStyle.swift; sourceTree = "<group>"; };
 		0C78E5632922B16C0051CA9C /* LearnedLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnedLesson.swift; sourceTree = "<group>"; };
-		0C78E5652922B25D0051CA9C /* LearnedLessonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnedLessonsView.swift; sourceTree = "<group>"; };
 		0CF9AC9D28F34AFD00BFEBE3 /* Course.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Course.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF9ACA028F34AFD00BFEBE3 /* CourseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseApp.swift; sourceTree = "<group>"; };
 		0CF9ACA228F34AFD00BFEBE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -250,11 +248,10 @@
 		0C63230929084B4E00645600 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				0C63230729084B4000645600 /* NotificationsView.swift */,
 				0C5ECF35293A6E2A00BE5287 /* ChartsView.swift */,
-				0C78E5652922B25D0051CA9C /* LearnedLessonsView.swift */,
 				0C63230529084B2500645600 /* ExploreView.swift */,
 				0C63230329084B0D00645600 /* HomeView.swift */,
+				0C63230729084B4000645600 /* NotificationsView.swift */,
 				0C63230A29084B6600645600 /* LibraryView.swift */,
 			);
 			path = Main;
@@ -268,6 +265,7 @@
 				0C5BF7032930F0E3002BC1AD /* FAQView.swift */,
 				0C5BF7062930F114002BC1AD /* PackagesView.swift */,
 				0C5BF7082930F133002BC1AD /* CertificatesView.swift */,
+				0C60229F29547E4200F12F7B /* CourseViewsView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -366,14 +364,6 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
-		0C63239629167CA300645600 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				0C63239729167CB100645600 /* StrokeStyle.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		0CF9AC9428F34AFD00BFEBE3 = {
 			isa = PBXGroup;
 			children = (
@@ -393,8 +383,8 @@
 		0CF9AC9F28F34AFD00BFEBE3 /* Course */ = {
 			isa = PBXGroup;
 			children = (
-				0CF9ACA028F34AFD00BFEBE3 /* CourseApp.swift */,
 				0C5BF7192932467D002BC1AD /* GoogleService-Info.plist */,
+				0CF9ACA028F34AFD00BFEBE3 /* CourseApp.swift */,
 				0CF9ACA228F34AFD00BFEBE3 /* ContentView.swift */,
 				0C6322FE29084A6000645600 /* NavigationBar.swift */,
 				0C63230029084AE600645600 /* TabBar.swift */,
@@ -402,7 +392,6 @@
 				0C5BF70A2930F148002BC1AD /* ViewModels */,
 				0C5BF7012930F071002BC1AD /* Resources */,
 				0C5BF6F82930EFF3002BC1AD /* Graphics */,
-				0C63239629167CA300645600 /* Extensions */,
 				0C63234B29084E6500645600 /* Styles */,
 				0C63233A29084DDE00645600 /* Model */,
 				0C63230229084AF900645600 /* Views */,
@@ -508,7 +497,6 @@
 				0C5BF71B29324A39002BC1AD /* GoogleService-Info.plist in Sources */,
 				0C63233729084DB000645600 /* AnimatedBlobView.swift in Sources */,
 				0C63231329084BC200645600 /* ModalView.swift in Sources */,
-				0C63239829167CB100645600 /* StrokeStyle.swift in Sources */,
 				0C5BF6F72930EF52002BC1AD /* GradientIcon.swift in Sources */,
 				0C5ECF342938D7A200BE5287 /* Assets.xcassets in Sources */,
 				0C63234A29084E5B00645600 /* Update.swift in Sources */,
@@ -572,11 +560,11 @@
 				0C63233129084D7000645600 /* LogoView.swift in Sources */,
 				0C5BF6EC2930EEDC002BC1AD /* MenuRow.swift in Sources */,
 				0C5BF6EA2930EECA002BC1AD /* LitemodeRow.swift in Sources */,
+				0C6022A029547E4200F12F7B /* CourseViewsView.swift in Sources */,
 				0C63233529084D9400645600 /* Wave.swift in Sources */,
 				0C63234F29084E9400645600 /* AnimatableFontModifier.swift in Sources */,
 				0C63235B2908509400645600 /* SignInView.swift in Sources */,
 				0C63233929084DC200645600 /* HexagonView.swift in Sources */,
-				0C78E5662922B25D0051CA9C /* LearnedLessonsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

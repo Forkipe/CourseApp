@@ -41,6 +41,6 @@ struct SectionRow: View {
 
 struct SectionRow_Previews: PreviewProvider {
     static var previews: some View {
-        SectionRow(section: courseSections[0])
+        SectionRow(section: courseSections[2])
     }
 }

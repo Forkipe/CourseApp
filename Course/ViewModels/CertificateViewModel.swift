@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import FirebaseFirestore
 import Firebase
+import Combine
 
 final class CertificateViewModel: ObservableObject {
     @Published var certificates: [Certificate] = []
@@ -18,7 +20,7 @@ final class CertificateViewModel: ObservableObject {
     func fetchCertificates() {
         let db = Firestore.firestore()
 
-        db.collection("Сertificates").getDocuments() { (querySnapshot, error) in
+        db.collection("Сertificates").getDocuments { (querySnapshot, error) in
             if let error = error {
                 print("Error getting documents: \(error)")
             } else {

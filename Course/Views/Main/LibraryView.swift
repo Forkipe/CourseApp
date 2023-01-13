@@ -8,92 +8,107 @@
 import SwiftUI
 
 struct LibraryView: View {
-    @Environment(\.colorScheme) var colorScheme: ColorScheme
-    @AppStorage("isLiteMode") var isLiteMode: Bool = false
-    
-    @State private var showCertificates: Bool = false
-    @State private var contentOffset = CGFloat(0)
-    
+    @State var contentHasScrolled = false
+    @EnvironmentObject var model: Model
     var body: some View {
-        NavigationView {
-            ZStack(alignment: .top) {
-                TrackableScrollView(offsetChanged: { offsetPoint in
-                    contentOffset = offsetPoint.y
-                }){
-                    content
-                }
-                
-                VisualEffectBlur(blurStyle: .systemMaterial)
-                    .opacity(contentOffset < -16 ? 1 : 0)
-                    .animation(.easeIn)
-                    .ignoresSafeArea()
-                    .frame(height: 0)
-            }
-            .frame(maxHeight: .infinity, alignment: .top)
-            .background(AccountBackground())
-            .navigationBarHidden(true)
-            .sheet(isPresented: $showCertificates, content: {
-                CertificatesView()
-            })
-        }
-        .navigationViewStyle(StackNavigationViewStyle())
-        .accentColor(colorScheme == .dark ? .white : Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
-    }
-    
-    var content: some View {
-        VStack {
-            ProfileRow()
-                .onTapGesture {
-                    showCertificates.toggle()
-                }
-            
-            VStack {
-                divider
-                LiteModeRow()
-            }
-            .blurBackground()
-            .padding(.top, 20)
-            
-            VStack {
-                NavigationLink(destination: FAQView()) {
-                    MenuRow()
-                }
-                
-                divider
-                
-                NavigationLink(destination: PackagesView()) {
-                    MenuRow(title: "SwiftUI Packages", leftIcon: "square.stack.3d.up.fill")
-                }
-                
-                divider
-                
-                Link(destination: URL(string: "https://www.youtube.com/channel/UCTIhfOopxukTIRkbXJ3kN-g")!, label: {
-                    MenuRow(title: "YouTube Channel", leftIcon: "play.rectangle.fill", rightIcon: "link")
+      NavigationView {
+            ZStack {
+                Color("Background").ignoresSafeArea()
+                content.overlay(NavigationLink(destination: CourseViews()){
+                    Text("Course views")
+                        .foregroundColor(Color.black)
+                        .offset(x: -35, y: 2)
                 })
-            }
-            .blurBackground()
-            .padding(.top, 20)
-            
-            Text("Version 1.00")
-                .foregroundColor(Color.white.opacity(0.7))
-                .padding(.top, 20)
-                .padding(.horizontal, 20)
-                .padding(.bottom, 10)
-                .font(.footnote)
+                        .background(Image("Blob 1").offset(x: -200))
+                        .background(Image("Blob 1").offset(x: 330, y: 480))
+            }.offset(x: -10, y: -210)
         }
-        .foregroundColor(Color.white)
-        .padding(.top, 20)
-        .padding(.horizontal, 20)
-        .padding(.bottom, 10)
     }
-    
-    var divider: some View {
-        Divider().background(Color.white).blendMode(.overlay)
+    var dividerThick: some View {
+        Rectangle().opacity(0.2)
+            .frame(width: 280.0, height: 1.0)
+    }
+    var content: some View {
+        ScrollView {
+            scrollDetection
+            Spacer()
+                .frame(height: 300.0)
+            roundedRectangle
+                .padding(.top, -170)
+                .overlay(dividerThick
+                    .offset(y: -130))
+                .overlay(dividerThick
+                    .offset(y: -70))
+        } .overlay(NavigationBar(title: "Library", contentHasScrolled: $contentHasScrolled))
+            .background(.ultraThinMaterial)
+            .offset(y: 210)
+            .offset(x: 10)
+            .coordinateSpace(name: "scroll")
+        
+    }
+    var roundedRectangle: some View {
+            VStack {
+                    RoundedRectangle(cornerRadius: 20)
+                        .frame(width: 300.0, height: 187.5)
+                        .foregroundStyle(.ultraThinMaterial
+                            .opacity(1))
+                        .overlay(Text("Leave feedback")
+                            .offset(x: -35, y: 70)
+                            .foregroundColor(.black))
+                        .overlay(Image(systemName: "paperplane.circle")
+                            .resizable()
+                            .offset(x: -120, y: 70)
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(.black))
+                    
+                        .overlay(Text("Edit Views")
+                            .offset(x: -55, y: 5)
+                            .foregroundColor(Color.black))
+                    
+                        .overlay(Image(systemName: "pencil.circle")
+                            .resizable()
+                            .foregroundColor(.black)
+                            .frame(width: 30.0, height: 30.0)
+                            .offset(x: -120, y: 5))
+                    
+                        .overlay(Image(systemName:
+                                        "doc.circle")
+                            .resizable()
+                            .frame(width: 30.0, height: 30.0)
+                            .offset(x: -120, y: -60)
+                            .foregroundColor(.black))
+                    
+                        .overlay(Text("Course views")
+                            .foregroundColor(Color.black)
+                            .offset(x: -45, y: -60))
+                    Text("Here you can see/edit views or technologies from different lessons")
+                        .multilineTextAlignment(.center)
+                        .frame(width: 270.0)
+                        .offset(y: 70)
+                        .font(.footnote)
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.black)
+            }
+    }
+    var scrollDetection: some View {
+        GeometryReader { proxy in
+            let offset = proxy.frame(in: .named("scroll")).minY
+            Color.clear.preference(key: ScrollPreferenceKey.self, value: offset)
+        }
+        .onPreferenceChange(ScrollPreferenceKey.self) { offset in
+            withAnimation(.easeInOut) {
+                if offset < 0 {
+                    contentHasScrolled = true
+                } else {
+                    contentHasScrolled = false
+                }
+            }
+        }
     }
 }
 
 struct LibraryView_Previews: PreviewProvider {
     static var previews: some View {
-        LibraryView()
+        LibraryView().environmentObject(Model())
     }
 }

@@ -17,17 +17,14 @@ struct CourseSection: Identifiable {
     var background: String
     var logo: String
     var progress: CGFloat
+    var view: String 
 }
 
 var courseSections = [
-    CourseSection(title: "Advanced Custom Layout", subtitle: "SwiftUI for iOS 15", text: "Build an iOS app for iOS 15 with custom layouts...", image: "Illustration 1", background: "Background 5", logo: "Logo 2", progress: 0.5),
-    CourseSection(title: "Coding the Home View", subtitle: "SwiftUI Concurrency", text: "Learn about the formatted(date:time:) method and AsyncImage", image: "Illustration 2", background: "Background 4", logo: "Logo 2", progress: 0.2),
-    CourseSection(title: "Styled Components", subtitle: "React Advanced", text: "Reset your CSS, set up your fonts and create your first React component", image: "Illustration 3", background: "Background 3", logo: "Logo 3", progress: 0.8),
-    CourseSection(title: "Flutter Interactions", subtitle: "Flutter for designers", text: "Use the GestureDetector Widget to create amazing user interactions", image: "Illustration 4", background: "Background 2", logo: "Logo 1", progress: 0.0),
-    CourseSection(title: "Firebase for Android", subtitle: "Flutter for designers", text: "Create your first Firebase Project and download Firebase plugins for Android", image: "Illustration 5", background: "Background 1", logo: "Logo 1", progress: 0.1),
-    CourseSection(title: "Advanced Custom Layout", subtitle: "SwiftUI for iOS 15", text: "Build an iOS app for iOS 15 with custom layouts...", image: "Illustration 1", background: "Background 5", logo: "Logo 2", progress: 0.5),
-    CourseSection(title: "Coding the Home View", subtitle: "SwiftUI Concurrency", text: "Learn about the formatted(date:time:) method and AsyncImage", image: "Illustration 2", background: "Background 4", logo: "Logo 2", progress: 0.2),
-    CourseSection(title: "Styled Components", subtitle: "React Advanced", text: "Reset your CSS, set up your fonts and create your first React component", image: "Illustration 3", background: "Background 3", logo: "Logo 3", progress: 0.8),
-    CourseSection(title: "Flutter Interactions", subtitle: "Flutter for designers", text: "Use the GestureDetector Widget to create amazing user interactions", image: "Illustration 4", background: "Background 2", logo: "Logo 1", progress: 0.0),
-    CourseSection(title: "Firebase for Android", subtitle: "Flutter for designers", text: "Create your first Firebase Project and download Firebase plugins for Android", image: "Illustration 5", background: "Background 1", logo: "Logo 1", progress: 0.1)
+    CourseSection(title: "SwiftUI for iOS 15", subtitle: "20 sections - 3 hours", text: "Build an iOS app for iOS 15 with custom layouts, animations and ...", image: "Illustration 9", background: "Background 5", logo: "Logo 2", progress: 0.5, view: "SwiftUI for iOS 15"),
+    CourseSection(title: "SwiftUI Combine and Data", subtitle: "18 sections - 3 hours of video", text: "Learn about Combine, the MVVM architecture, data, notifications and performance hands-on by creating a beautiful SwiftUI application", image: "Illustration 3", background: "Background 4", logo: "Logo 2", progress: 0.2, view: "SwiftUI Combine and Data"),
+    CourseSection(title: "SwiftUI Concurrency", subtitle: "20 sections - 3 hours", text: "Concurrency, swipe actions, search feature, AttributedStrings and accessibility were concepts discussed at WWDC21...", image: "Illustration 1", background: "Background 1", logo: "Logo 2", progress: 0.8, view: "SwiftUI Concurrency"),
+    CourseSection(title: "UI and Animations in SwiftUI", subtitle: "19 sections - 4 hours of video", text: "Level up your UI and animation skills by implementing various applications from custom designs in SwiftUI", image: "Illustration 2", background: "Background 2", logo: "Logo 2", progress: 0.3, view: "UI and Animations in SwiftUI"),
+    CourseSection(title: "Advanced Development in SwiftUI", subtitle: "20 sections - 4 hours of video", text: "Advance your SwiftUI skills by developing an app using Core Data, CloudKit, In App Purchases...", image: "Illustration 2", background: "Background 2", logo: "Logo 2", progress: 0.6, view: "Advanced Development in SwiftUI"),
+   
 ]
